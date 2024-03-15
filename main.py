@@ -1,12 +1,12 @@
-import ursina
+from ursina import *
 
-def main(*args, **kwargs) -> None:
-    for numero in range(1000):
-        print(numero)
+app = Ursina()
+speed = 10
 
+player = Entity(model='circle', color=color.orange, scale_y=2)
+def update():
+    player.x += (held_keys['d'] - held_keys['a']) * time.dt * speed
+    player.y += (held_keys['w'] - held_keys['s']) * time.dt * speed
     pass
 
-
-if __name__ == "__main__":
-    main()
-    # Fim do Código
+app.run()
