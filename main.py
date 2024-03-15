@@ -1,5 +1,4 @@
-
-
+import ursina
 
 def main(*args, **kwargs) -> None:
     for numero in range(1000):
