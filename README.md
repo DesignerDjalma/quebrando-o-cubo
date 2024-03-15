@@ -1,2 +1,2 @@
 # quebrando-o-cubo
-Eu e o pensa
+- é um jogo
